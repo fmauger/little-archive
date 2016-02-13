@@ -1,7 +1,7 @@
 /*****************************************************************************/
 /**
- * \file little_archive.hpp
- * \brief Needed for unit tests on the little archives.
+ * \file polymorphic_little_archive.hpp
+ * \brief Needed for unit tests on little archives.
  * \author christian.pfligersdorffer@gmx.at
  *
  * Header for testing little archives with all of the serialization tests.
@@ -19,15 +19,15 @@
 
 // text_archive test header
 // include output archive header
-#include "little_oarchive.hpp"
+#include <boost/archive/little_oarchive.hpp>
 // set name of test output archive
-typedef boost::archive::little_oarchive test_oarchive;
+typedef boost::archive::polymorphic_little_oarchive test_oarchive;
 // set name of test output stream
 typedef std::ofstream test_ostream;
 
 // repeat the above for input archive
-#include "little_iarchive.hpp"
-typedef boost::archive::little_iarchive test_iarchive;
+#include <boost/archive/little_iarchive.hpp>
+typedef boost::archive::polymorphic_little_iarchive test_iarchive;
 typedef std::ifstream test_istream;
 
 // define open mode for streams
