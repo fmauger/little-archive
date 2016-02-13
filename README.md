@@ -1,7 +1,7 @@
 # little-archive
 #### C++ portable archive for boost::serialization
 
-Formerly called *eos portable archive* this extension to boost serialization contains a little-endian portable binary archive, which has been around and in use since 2007. Several projects, both industry and academia have been relying on the advantages in both data footprint and runtime efficiency over text and xml archives. 
+Formerly called *eos portable archive* this extension to boost serialization contains a little-endian portable binary archive, which has been around and in use since 2007. Several projects, both industry and academia have been relying on the advantages in both data footprint and runtime efficiency over text and xml archives. For documentation and some coding examples see https://rawgit.com/pfligersdorffer/little-archive/develop/doc/little-tutorial.html or doc/little-tutorial.html.
 
 Originally evolving from Robert Ramey's portable binary archive example the little archive adds cross-platform IEEE floating point support by leveraging Johan Rade's work on fp_utilities. Generic integer type serialization relies on Beman Dawes' endian library which is officially listed since version 1.58.
 
